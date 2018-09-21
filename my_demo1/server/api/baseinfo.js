@@ -26,10 +26,10 @@ router.post('/addUser', (req, res) => {
     console.log(params);
     conn.query(sql, [params.username, params.age], function(err, result) {
         if (err) {
-            console.log(err);
+          console.log(err);
         }
         if (result) {
-            jsonWrite(res, result);
+          jsonWrite(res, result);
         }
     })
 });
