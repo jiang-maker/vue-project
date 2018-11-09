@@ -10,18 +10,16 @@ var connection = mysql.createConnection({
 connection.connect();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  console.log('object');
-  res.send('respond with a resource');
-});
-router.get('/regist', function(req, res, next) {
-  console.log(req);
-  // var a_usr = {name:'test',pwd:'123456'}
-  // console.log('object');
-  connection.query('INSERT INTO user SET ?', req, function (error, results, fields) {
-    if (error) throw error;
-    console.log('The solution is: 123test');
-  });
-  res.send('The solution is: ' + results[0].solution);
-});
+router.post('/userinfo', function (req, res, next) {
+  console.log('请求信息为：');
+  console.log(req.body);
+  res.json({
+    meta:{
+      code: '200'
+    },
+    data: {
+      message:'dfasdfsfs'
+    }
+  })
+})
 module.exports = router;

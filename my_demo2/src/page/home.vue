@@ -1,5 +1,5 @@
 <template>
-  <div>海参炒面</div>
+  <div>海参炒面123</div>
 </template>
 <script>
 export default {
@@ -9,11 +9,11 @@ export default {
     }
   },
   created(){
-    let url = 'http://127.0.0.1:3000/users/regist'
+    let url = 'http://192.168.4.42:3000/users/userinfo'
     // console.log(this.$axios)
-    var req = {name:'test23',pwd:'123456'}
+    var req = {}
     req = JSON.stringify(req)
-    this.$axios.post(req).then((response) => {
+    this.$axios.post(url, req).then((response) => {
         // success
         this.myData = response.data.data;
         console.log(this.myData);
