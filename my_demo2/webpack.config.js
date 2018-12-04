@@ -56,7 +56,14 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: true,
-    overlay: true
+    overlay: true,
+    port: 8090,                  //默认设置为8080端口号
+    proxy: {
+      '/server': {
+        target: 'http://192.168.4.42:3000',
+        changeOrigin: true
+      }
+    }
   },
   performance: {
     hints: false
