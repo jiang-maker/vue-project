@@ -1,9 +1,0 @@
-module.exports={
-  mysql:{
-    host:'localhost',
-    user:'root',
-    password:'root',
-    database:'mysql',
-    port:'3306'
-  }
-}

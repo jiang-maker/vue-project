@@ -84,6 +84,7 @@
 </template>
 
 <script>
+// import { register } from '../interface/test/test.js'
 export default {
   name: 'HelloWorld',
   data () {
@@ -91,6 +92,10 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   }
+  // async created () {
+  //   let res = await register()
+  //   console.log(res)
+  // }
 }
 </script>
 
