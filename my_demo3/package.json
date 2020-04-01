@@ -11,6 +11,10 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+<<<<<<< HEAD
+=======
+    "mongodb": "^3.5.5",
+>>>>>>> 5c25df05fa4dbbba1131adf7cdf9436c9ab31ef3
     "morgan": "~1.9.1"
   }
 }
